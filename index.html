@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow - Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      /* Transições suaves */
+      .transition-all {
+        transition: all 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white dark:bg-gray-800 shadow-lg p-4 flex flex-col gap-6">
+        <h1 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">TaskFlow</h1>
+        <nav class="flex flex-col gap-4">
+          <a href="#" class="flex items-center gap-2 hover:text-indigo-600 transition-all">
+            <i data-lucide="layout-dashboard" class="w-5 h-5"></i> Dashboard
+          </a>
+          <a href="#" class="flex items-center gap-2 hover:text-indigo-600 transition-all">
+            <i data-lucide="calendar" class="w-5 h-5"></i> Calendário
+          </a>
+          <a href="#" class="flex items-center gap-2 hover:text-indigo-600 transition-all">
+            <i data-lucide="list-checks" class="w-5 h-5"></i> Tarefas
+          </a>
+          <a href="#" class="flex items-center gap-2 hover:text-indigo-600 transition-all">
+            <i data-lucide="bar-chart-3" class="w-5 h-5"></i> Metas
+          </a>
+        </nav>
+        <button class="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white p-2 rounded-lg transition-all">
+          Nova Tarefa
+        </button>
+      </aside>
+
+      <!-- Conteúdo principal -->
+      <main class="flex-1 p-6 overflow-auto">
+        <header class="flex justify-between items-center mb-6">
+          <h2 class="text-3xl font-semibold">Bem-vindo, Gabriel!</h2>
+          <button class="text-sm text-indigo-600 hover:underline">Sair</button>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Card de tarefa -->
+          <div class="bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md hover:shadow-lg transition-all">
+            <h3 class="font-semibold text-lg mb-2">Estudar JavaScript</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Capítulo de lógica e arrays</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-xs text-yellow-500">Em andamento</span>
+              <button class="text-indigo-500 hover:underline text-sm">Ver</button>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md hover:shadow-lg transition-all">
+            <h3 class="font-semibold text-lg mb-2">Atualizar portfólio</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Adicionar novo projeto</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-xs text-green-500">Concluído</span>
+              <button class="text-indigo-500 hover:underline text-sm">Ver</button>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-md hover:shadow-lg transition-all">
+            <h3 class="font-semibold text-lg mb-2">Treinar CSS com Tailwind</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Refazer layout principal</p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-xs text-red-500">Pendente</span>
+              <button class="text-indigo-500 hover:underline text-sm">Ver</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
