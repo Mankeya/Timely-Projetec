@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login </title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
+  <div class="min-h-screen flex flex-col items-center justify-center px-6">
+    <h1 class="text-4xl font-bold text-indigo-600 mb-4">Timely</h1>
+    <p class="text-center max-w-xl mb-8">
+      Organize sua rotina, visualize suas metas, e gerencie tarefas com inteligência. Tudo em um só lugar com produtividade e praticidade.
+    </p>
+
+    <!-- Formulário de Login -->
+    <form action="dashboard.html" class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md w-full max-w-sm">
+      <h2 class="text-xl font-semibold mb-4 text-center">Acessar Conta</h2>
+      <label class="block mb-2 text-sm font-medium">Email</label>
+      <input type="email" required class="w-full p-2 mb-4 rounded border border-gray-300 dark:bg-gray-700 dark:border-gray-600" />
+
+      <label class="block mb-2 text-sm font-medium">Senha</label>
+      <input type="password" required class="w-full p-2 mb-4 rounded border border-gray-300 dark:bg-gray-700 dark:border-gray-600" />
+
+      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded transition-all">
+        Entrar
+      </button>
+    </form>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
