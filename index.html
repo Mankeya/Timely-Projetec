@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Timely - Organize sua rotina</title>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -11,6 +17,11 @@
   <!-- Header simples -->
   <header class="flex justify-between items-center px-8 py-4">
     <h1 class="text-2xl font-bold text-indigo-600">TaskFlow</h1>
+
+    <div class="flex items-center gap-4">
+     <button id="toggle-dark" class="text-xl p-2 rounded houver:bg-gray-200 dark:hover:bg-gray-700 transition">
+        🌙
+     </button>
     <nav class="flex gap-6 text-sm font-medium">
       <a href="#" class="hover:text-indigo-600 transition-all">Soluções</a>
       <a href="#" class="hover:text-indigo-600 transition-all">Recursos</a>
