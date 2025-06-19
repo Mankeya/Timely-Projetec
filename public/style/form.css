@@ -1,0 +1,5 @@
+/* Estilos adicionais se necessário */
+    .password-strength-bar {
+      height: 4px;
+      transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
