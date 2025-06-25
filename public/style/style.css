@@ -13,3 +13,18 @@ html {
 .transition-all {
   transition: all 0.2s ease-in-out;
 }
+
+header {
+  
+  width: 100%;
+  padding: 15px 5%; /* Adapta a altura e mantém margens laterais */
+  /* Para alinhar a logo e a navegação */
+  display: flex;
+  justify-content: space-between; /* Itens nas extremidades */
+  align-items: center; /* Itens centralizados verticalmente */
+}
+
+.logo-principal {
+  height: 50px;
+  width: auto;
+}
