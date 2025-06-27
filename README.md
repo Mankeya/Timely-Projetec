@@ -22,3 +22,14 @@ Organize sua rotina, visualize suas metas e gerencie tarefas com inteligência. 
 - Node.js + Express
 - MariaDB (MySQL compatível)
 - Flowbite (para UI components)
+
+  
+# Sobre o Projeto
+
+Este projeto foi desenvolvido em colaboração por três profissionais dedicados:
+
+- **Filipe Brito** – Focado no design e desenvolvimento do frontend, criando interfaces intuitivas e responsivas para melhor experiência do usuário.  
+- **Henrique Miranda** – Responsável pela arquitetura do sistema e implementação do backend, garantindo a robustez e escalabilidade da aplicação.  
+- **Gabriel Manke** – Atuou na integração entre frontend e backend, além de testes e documentação, assegurando a qualidade e manutenção do código.
+
+Juntos, buscamos entregar um projeto de alta qualidade, com código limpo, organizado e funcional.
