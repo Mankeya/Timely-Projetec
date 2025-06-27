@@ -1,0 +1,8 @@
+.transition-all {
+    transition: all 0.2s ease-out;
+  }
+
+.logo-dashboard {
+    height: 30px;
+    width: 40px;
+  }
