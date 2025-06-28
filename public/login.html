@@ -13,16 +13,16 @@
   <div class="min-h-screen flex flex-col items-center justify-center px-6">
     <h1 class="text-4xl font-bold text-indigo-600 mb-4"></h1>
     </p>
-    <!-- Adicionado o ID 'login-form' e removido o 'action' -->
+    <!--ID 'login-form'-->
     <form id="login-form" class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md w-full max-w-sm">
       <h2 class="text-xl font-semibold mb-4 text-center">Acessar Conta</h2>
       
       <label for="email" class="block mb-2 text-sm font-medium">Email</label>
-      <!-- Adicionado o ID 'email' -->
+      <!--  o ID 'email' -->
       <input type="email" id="email" required class="w-full p-2 mb-4 rounded border border-gray-300 dark:bg-gray-700 dark:border-gray-600" />
 
       <label for="senha" class="block mb-2 text-sm font-medium">Senha</label>
-      <!-- Adicionado o ID 'senha' -->
+      <!-- o ID 'senha' -->
       <input type="password" id="senha" required class="w-full p-2 mb-4 rounded border border-gray-300 dark:bg-gray-700 dark:border-gray-600" />
       
       <!-- Área para mostrar mensagens de erro ou sucesso -->
@@ -31,14 +31,29 @@
       <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded transition-all">
         Entrar
       </button>
+  
+      <body class="min-h-screen flex items-center justify-center bg-gray-900">
 
-       <p class="text-xs text-center mt-4 text-gray-500 dark:text-gray-400">
-        Não tem uma conta? <a href="form.html" class="text-indigo-600 hover:underline">Cadastre-se</a>
-      </p>
-    </form>
-  </div>
+      <div class="flex flex-col items-center gap-4 text-center">
 
-  <!-- Certifique-se de que o caminho para o seu JS está correto -->
-  <script src="script/login.js"></script>
+       <!-- Botão Google -->
+       <button type="button"
+            class="mt-4 flex items-center px-5 py-2.5 bg-[#050708] hover:bg-[#050708] text-white text-sm font-medium rounded-md focus:ring-4 focus:outline-none focus:ring-[#050708]/50 dark:focus:ring-[#050708]/55">
+        <svg class="w-4 h-4 me-2" aria-hidden="true" fill="currentColor" viewBox="0 0 18 19">
+        <path fill-rule="evenodd"
+              d="M8.842 18.083a8.8 8.8 0 0 1-8.65-8.948 8.841 8.841 0 0 1 8.8-8.652h.153a8.464 8.464 0 0 1 5.7 2.257l-2.193 2.038A5.27 5.27 0 0 0 9.09 3.4a5.882 5.882 0 0 0-.2 11.76h.124a5.091 5.091 0 0 0 5.248-4.057L14.3 11H9V8h8.34c.066.543.095 1.09.088 1.636-.086 5.053-3.463 8.449-8.4 8.449l-.186-.002Z"
+              clip-rule="evenodd" />
+         </svg>
+        Sign in with Google
+       </button>
+
+       <!-- Texto abaixo -->
+       <p class="text-sm text-gray-400 dark:text-gray-300">
+        Não tem uma conta? <a href="form.html" class="text-blue-500 hover:underline">Cadastre-se</a>
+          </p>
+         </form>
+        </div>
+
+       <script src="script/login.js" defer></script>
 </body>
 </html>
