@@ -1,3 +1,8 @@
+firebase.auth().onAuthStateChanged(user => {
+        if (!user) {
+      window.location.href = "login.html";
+         }
+        });
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('avatarButton');
   const dropdown = document.getElementById('userDropdown');

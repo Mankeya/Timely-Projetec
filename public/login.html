@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { darkMode: 'class' };
-  </script>
+
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
   <div class="min-h-screen flex flex-col items-center justify-center px-6">
@@ -37,7 +35,7 @@
       <div class="flex flex-col items-center gap-4 text-center">
 
        <!-- Botão Google -->
-       <button type="button"
+       <button type="button" id="google-signin-btn"
             class="mt-4 flex items-center px-5 py-2.5 bg-[#050708] hover:bg-[#050708] text-white text-sm font-medium rounded-md focus:ring-4 focus:outline-none focus:ring-[#050708]/50 dark:focus:ring-[#050708]/55">
         <svg class="w-4 h-4 me-2" aria-hidden="true" fill="currentColor" viewBox="0 0 18 19">
         <path fill-rule="evenodd"
@@ -53,7 +51,6 @@
           </p>
          </form>
         </div>
-
-       <script src="script/login.js" defer></script>
+       <script type="module" src="script/login.js"></script>
 </body>
 </html>

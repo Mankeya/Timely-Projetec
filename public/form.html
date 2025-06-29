@@ -4,12 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cadastro</title>
-  <script>
-    // Configuração do modo escuro para o Tailwind
-    tailwind.config = {
-      darkMode: 'class',
-    };
-  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -31,7 +25,7 @@
       <h2 class="text-3xl font-bold text-center mb-2 text-gray-800 dark:text-white">Crie sua conta</h2>
       <p class="text-center text-gray-600 dark:text-gray-300 mb-8">Comece a organizar suas tarefas hoje mesmo.</p>
 
-      <form id="formUsuario" novalidate>
+      <form id="form-cadastro">
         <div class="mb-4">
           <label for="nome" class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-200">Nome Completo</label>
           <input type="text" id="nome" name="nome" placeholder="Seu nome" required class="w-full px-4 py-2 bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
@@ -67,6 +61,7 @@
       </form>
     </div>
   </main>
-  <script src="script/form.js"></script>
+  
+  <script type="module" src="script/form.js"></script>
 </body>
 </html>
