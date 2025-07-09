@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="dark">
+<html lang="pt-br" class="dark transition-colors duration-300">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,16 +8,17 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link rel="stylesheet" href="style/form.css" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+   <link rel="shortcut icon" href="public/img/favicon.ico" type="image/x-icon">
 </head>
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white flex flex-col min-h-screen">
+
+<body class="font-inter text-white transition-colors duration-300 bg-white dark:bg-gray-900 text-gray-900 dark:text-white flex flex-col min-h-screen">
   <header class="flex justify-between items-center px-8 py-4">
     <a href="index.html" class="text-2xl font-bold text-indigo-600">SincroTask</a>
 
-      <nav class="flex gap-6 text-sm font-medium items-center">
-        <a href="login.html" class="hover:text-indigo-600 transition-all">Já tem uma conta? Faça Login</a>
-      </nav>
+    <nav class="flex gap-6 text-sm font-medium items-center">
+      <a href="login.html" class="hover:text-indigo-600 transition-all">Já tem uma conta? Faça Login</a>
+    </nav>
     </div>
   </header>
 
@@ -27,33 +29,40 @@
 
       <form id="form-cadastro">
         <div class="mb-4">
-          <label for="nome" class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-200">Nome Completo</label>
-          <input type="text" id="nome" name="nome" placeholder="Seu nome" required class="w-full px-4 py-2 bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+          <label for="nome" class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-200">Nome
+            Completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required
+            class="w-full px-4 py-2 bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
         </div>
 
         <div class="mb-4">
           <label for="email" class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-200">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="seu@email.com" required class="w-full px-4 py-2 bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required
+            class="w-full px-4 py-2 bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
           <p id="email-error" class="text-red-500 text-xs mt-1 hidden">Por favor, insira um e-mail válido.</p>
         </div>
 
         <div class="mb-6">
           <label for="senha" class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-200">Senha</label>
           <div class="relative">
-            <input type="password" id="senha" name="senha" placeholder="Crie uma senha forte" required class="w-full px-4 py-2 bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
-            <button type="button" id="toggle-password" class="absolute inset-y-0 right-0 px-3 flex items-center text-gray-500 dark:text-gray-400">
+            <input type="password" id="senha" name="senha" placeholder="Crie uma senha forte" required
+              class="w-full px-4 py-2 bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+            <button type="button" id="toggle-password"
+              class="absolute inset-y-0 right-0 px-3 flex items-center text-gray-500 dark:text-gray-400">
               <i class="fa fa-eye-slash"></i>
             </button>
           </div>
-           <div class="mt-2">
-            <div class="password-strength-bar bg-gray-300 dark:bg-gray-600 rounded-full">
-                <div id="password-strength-indicator" class="w-0 rounded-full"></div>
+          <div class="mt-2">
+            <div
+              class="h-1 transition-[width,background-color] duration-300 ease-in-out bg-gray-300 dark:bg-gray-600 rounded-full">
+              <div id="password-strength-indicator" class="w-0 rounded-full"></div>
             </div>
             <p id="password-strength-text" class="text-xs mt-1 text-gray-500 dark:text-gray-400"></p>
           </div>
         </div>
-        
-        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-md shadow-lg transition-all disabled:bg-indigo-400 disabled:cursor-not-allowed">
+
+        <button type="submit"
+          class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-md shadow-lg transition-all disabled:bg-indigo-400 disabled:cursor-not-allowed">
           Cadastrar
         </button>
 
@@ -61,7 +70,8 @@
       </form>
     </div>
   </main>
-  
-  <script type="module" src="script/form.js"></script>
+
+  <script type="module" src="../src/auth/register.js"></script>
 </body>
+
 </html>
